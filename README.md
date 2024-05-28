@@ -2,7 +2,7 @@
 ### Fairness
 _!!!DON'T COPY OTHER PEOPLES TESTS!!!_
 ### Install
-This project uses [clintest] (https://potassco.org/clintest/) to run the tests. Follow the instructions there.
+This project uses [clintest](https://potassco.org/clintest/) to run the tests. Follow the instructions there.
 
 To get it running: just clone into the directory your MartianAP.lp is located!
 ### Run Tests
