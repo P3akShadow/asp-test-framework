@@ -1,0 +1,6 @@
+assignment(a,t2,1) assignment(a,t1,1) assignment(b,t4,2) assignment(b,t5,3) assignment(c,t3,3)
+assignment(a,t2,1) assignment(a,t1,1) assignment(b,t4,2) assignment(b,t5,3) assignment(c,t3,2)
+assignment(a,t2,1) assignment(a,t1,2) assignment(b,t4,2) assignment(b,t5,3) assignment(c,t3,3)
+assignment(a,t2,1) assignment(b,t1,1) assignment(b,t4,2) assignment(b,t5,3) assignment(c,t3,3)
+assignment(a,t2,1) assignment(b,t1,1) assignment(b,t4,2) assignment(b,t5,3) assignment(c,t3,2)
+assignment(a,t2,1) assignment(b,t4,2) assignment(b,t1,2) assignment(b,t5,3) assignment(c,t3,3)
