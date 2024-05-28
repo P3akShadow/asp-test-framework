@@ -33,12 +33,6 @@ for _, _, files in os.walk("results"):
                 solver.solve(test)
                 if not test.outcome().is_certainly_true():
                     print(f"ERROR: expected test {resultfile} to contain:\n {result}")
-
-                result = [result[0], result[1], result[3]]
-                test = Assert(Any(), SupersetOf(set(result)))
-                solver.solve(test)
-                if not test.outcome().is_certainly_true():
-                    print(f"ERROR: expected test {resultfile} to contain:\n {result}")
                     errors += 1
 
         
