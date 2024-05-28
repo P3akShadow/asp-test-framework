@@ -1,4 +1,6 @@
 ## Usage
+### Fairness
+_!!!DON'T COPY OTHER PEOPLES TESTS!!!_
 ### Install
 this project uses [clintest] (https://potassco.org/clintest/) to run the tests. Follow the instructions there.
 ### Run Tests
