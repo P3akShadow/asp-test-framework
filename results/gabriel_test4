@@ -1,0 +1,4 @@
+assignment(alice,spacewalk,1) assignment(bob,maintenance,1) assignment(charlie,research,1) assignment(alice,communication,2) assignment(charlie,documentation,2)
+assignment(alice,spacewalk,1) assignment(bob,maintenance,1) assignment(charlie,research,1) assignment(bob,communication,2) assignment(charlie,documentation,2)
+assignment(alice,spacewalk,1) assignment(bob,maintenance,2) assignment(charlie,research,1) assignment(bob,communication,1) assignment(charlie,documentation,2)
+assignment(alice,spacewalk,1) assignment(bob,maintenance,2) assignment(charlie,research,1) assignment(alice,communication,2) assignment(charlie,documentation,2)
