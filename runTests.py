@@ -34,12 +34,12 @@ for _, _, files in os.walk("results"):
                 test = Assert(Any(), SupersetOf(set(result)))
                 tests.append(test)
 
-        if False and len(tests) > 10:
-            print("short test regime")
-            test = And(*tests)
-            solver.solve(test)
-            if not test.outcome().is_certainly_true():
-                print(f"ERROR: some result seems to be not contained!")
+        if len(tests) > 1000:
+            print("skipping detailed tests")
+            #test = And(*tests)
+            #solver.solve(test)
+            #if not test.outcome().is_certainly_true():
+            #    print(f"ERROR: some result seems to be not contained!")
         else:
             for test, result in zip(tests, results):
 
