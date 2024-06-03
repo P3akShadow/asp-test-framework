@@ -24,12 +24,25 @@ for _, _, files in os.walk("results"):
         solver = Clingo("0", testfileContent + martianAP)
 
         sum = 0
+        tests = []
+        results = []
         with open(f"results/{resultfile}", "r") as file:
             for line in file:
                 sum += 1
                 result = line.split()
-
+                results.append(result)
                 test = Assert(Any(), SupersetOf(set(result)))
+                tests.append(test)
+
+        if False and len(tests) > 10:
+            print("short test regime")
+            test = And(*tests)
+            solver.solve(test)
+            if not test.outcome().is_certainly_true():
+                print(f"ERROR: some result seems to be not contained!")
+        else:
+            for test, result in zip(tests, results):
+
                 solver.solve(test)
                 if not test.outcome().is_certainly_true():
                     print(f"ERROR: expected test {resultfile} to contain:\n {result}")
